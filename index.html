@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación Especial</title>
+    <style>
+        /* Estilo general */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fce4ec;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Tarjeta principal */
+        .card {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 400px;
+            padding: 20px;
+            text-align: center;
+            animation: aparecer 1s ease-in-out;
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Títulos */
+        h1 {
+            color: #e91e63;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        /* Botones */
+        button {
+            background-color: #e91e63;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 10px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 5px 15px rgba(233, 30, 99, 0.4);
+        }
+
+        button:active {
+            transform: scale(1);
+            box-shadow: none;
+        }
+
+        /* Emoji grande */
+        .emoji {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="emoji">💖</div>
+        <h1>Invitación Especial</h1>
+        <p>Hola, mi amor. 🌸</p>
+        <p>Quiero invitarte a ver <b>Moana 2</b> 🏝️ este <b>martes 3 de diciembre</b>.</p>
+        <p>Tu solo ponte bonita, te amo mucho. ✨❤️</p>
+        <p>¿Aceptas? 💕</p>
+        <button onclick="aceptar()">¡Sí, claro! 😘</button>
+        <button onclick="rechazar()">No puedo 😢</button>
+    </div>
+
+    <script>
+        function aceptar() {
+            window.open('https://wa.me/5217331171521?text=¡Claro%20que%20sí!%20Estoy%20emocionada%20por%20ver%20Moana%202%20juntos%20🥰', '_blank');
+        }
+
+        function rechazar() {
+            alert("Entendido, lo dejamos para otra ocasión. 😢");
+        }
+    </script>
+</body>
+</html>
